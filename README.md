@@ -1,5 +1,11 @@
 ## Tobu
 
+[![tests](https://github.com/eugenweissbart/tobu_elixir/workflows/tests/badge.svg)](https://github.com/eugenweissbart/tobu_elixir/actions?query=workflow:"tests")
+[![GitHub tag](https://img.shields.io/github/tag/eugenweissbart/tobu_elixir?include_prereleases=&sort=semver&color=9d2134)](https://github.com/eugenweissbart/tobu_elixir/releases/)
+[![License](https://img.shields.io/badge/License-MIT-9d2134)](#license)
+[![Hex version badge](https://img.shields.io/hexpm/v/tobu.svg)](https://hex.pm/packages/tobu)
+[![Hexdocs badge](https://img.shields.io/badge/hex-docs-lightblue)](https://hexdocs.pm/tobu)
+
 A simple token bucket featuring multiple buckets with custom configurations, on-the-fly bucket creation and manual bucket depletion.
 
 ## Installation
