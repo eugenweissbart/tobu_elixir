@@ -34,7 +34,7 @@ defmodule Tobu.MixProject do
         source_ref: "v#{@version}",
         extras: [],
         api_reference: false
-      ],
+      ]
     ]
   end
 
