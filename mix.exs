@@ -10,6 +10,7 @@ defmodule Tobu.MixProject do
       app: :tobu,
       description:
         "A simple token bucket featuring multiple buckets with custom configurations, on-the-fly bucket creation and manual bucket depletion.",
+      package: package(),
       version: @version,
       elixir: "~> 1.13",
       start_permanent: Mix.env() == :prod,
@@ -25,16 +26,27 @@ defmodule Tobu.MixProject do
         "coveralls.json": :test,
         "coveralls.lcov": :test
       ],
-      name: "Tobu",
       source_url: @project_url,
       homepage_url: @docs_url,
-      docs: [
-        main: "Tobu",
-        source_url: @project_url,
-        source_ref: "v#{@version}",
-        extras: [],
-        api_reference: false
-      ]
+      docs: docs()
+    ]
+  end
+
+  defp package do
+    [
+      maintainers: ["Eugen Weissbart"],
+      licenses: ["MIT"],
+      links: %{"GitHub" => @project_url}
+    ]
+  end
+
+  defp docs do
+    [
+      main: "Tobu",
+      source_url: @project_url,
+      source_ref: "v#{@version}",
+      extras: [],
+      api_reference: false
     ]
   end
 
